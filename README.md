@@ -12,7 +12,9 @@ Repositório estático para acompanhamento da agenda institucional do **Almirant
 - deslocamentos aéreos registrados no documento-base;
 - destaque explícito para hospedagem prevista em cada etapa;
 - página de biografia com carreira, comissões, cursos e condecorações;
-- layout responsivo para iPhone, Android, tablet e desktop;
+- layout mobile/tablet-first para iPhone, Android e tablets, preservando a versão desktop;
+- menu principal em cards na primeira tela de dispositivos móveis;
+- brasões padronizados em escala visual e fotografia reduzida no mobile;
 - PWA/offline quando servido por HTTPS ou `localhost`;
 - nenhuma biblioteca, CDN, fonte externa ou etapa de build.
 
