@@ -4,7 +4,10 @@ Repositório estático para acompanhamento da agenda institucional do **Almirant
 
 ## O que o projeto entrega
 
-- página inicial com retrato e identidades institucionais em fundo transparente e dimensões padronizadas;
+- layout da primeira página inspirado no Programa de Eventos do VAlte BELARMINO, adaptado ao Alte Esq Leonardo Puntel;
+- primeira tela enxuta, com retrato compacto ao lado da identificação da autoridade e menu de acesso direto aos eventos;
+
+- página inicial mobile-first, com retrato compacto ao lado do nome da autoridade e identidades institucionais padronizadas;
 - relógio em tempo real no fuso `America/Fortaleza` (BRT/UTC−3);
 - identificação automática do **evento em andamento** e do **próximo evento**;
 - **contagem regressiva em dias** para cada evento;

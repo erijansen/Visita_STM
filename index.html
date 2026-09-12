@@ -7,15 +7,16 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#050F41">
-  <meta name="description" content="Agenda institucional da visita do Almirante de Esquadra Leonardo Puntel na área do Comando do 3º Distrito Naval.">
-  <title>Visita Institucional — Alte Esq Leonardo Puntel</title>
+  <meta name="description" content="Programa de eventos da visita do Almirante de Esquadra Leonardo Puntel na área do Comando do 3º Distrito Naval.">
+  <title>Programa de Eventos — Alte Esq Leonardo Puntel</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/img/brasao-stm.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body data-page="home">
+<body data-page="home" class="landing-page">
 <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
-<header class="site-header">
+
+<header class="site-header landing-desktop-header">
   <div class="header-inner">
     <div class="brand-mini">
       <img src="assets/img/brasao-stm.png" alt="Brasão do Superior Tribunal Militar">
@@ -29,82 +30,72 @@
   </div>
 </header>
 
-<main id="conteudo" class="page-shell">
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-copy">
-      <div class="logo-row" aria-label="Identidades institucionais">
-        <div class="logo-cell"><img class="logo-stm" src="assets/img/brasao-stm.png" alt="Brasão do Superior Tribunal Militar"></div>
-        <div class="logo-cell"><img class="logo-mb" src="assets/img/marca-marinha-branca.png" alt="Marca da Marinha do Brasil em branco"></div>
-        <div class="logo-cell"><img class="logo-com3dn" src="assets/img/brasao-com3dn.png" alt="Brasão do Comando do 3º Distrito Naval"></div>
+<main id="conteudo" class="landing-shell">
+  <section class="landing-hero" aria-labelledby="landing-title">
+    <div class="landing-logos" aria-label="Identidades institucionais">
+      <div class="landing-logo-cell"><img src="assets/img/brasao-stm.png" alt="Brasão do Superior Tribunal Militar"></div>
+      <div class="landing-logo-cell"><img src="assets/img/marca-marinha-branca.png" alt="Marca da Marinha do Brasil em branco"></div>
+      <div class="landing-logo-cell"><img class="landing-logo-com3dn" src="assets/img/brasao-com3dn.png" alt="Brasão do Comando do 3º Distrito Naval"></div>
+    </div>
+
+    <div class="landing-kicker">Visita Institucional · 2026</div>
+    <h1 id="landing-title">Programa de Eventos</h1>
+
+    <div class="landing-authority-row">
+      <div class="landing-authority-copy">
+        <strong>Alte Esq Leonardo Puntel</strong>
+        <span>Ministro do Superior Tribunal Militar</span>
+        <small>Área do Comando do 3º Distrito Naval · 24SET a 31OUT2026</small>
       </div>
-      <div class="eyebrow">Visita Institucional · 2026</div>
-      <h1 id="hero-title">Almirante de Esquadra Leonardo Puntel
-        <small>Ministro do Superior Tribunal Militar</small>
-      </h1>
-      <p class="hero-role">Ex-Comandante de Operações Navais da Marinha do Brasil. Agenda de compromissos na área do Comando do 3º Distrito Naval, com eventos em João Pessoa, Fortaleza e Recife, incluindo voos registrados e hospedagem prevista.</p>
-      <nav class="hero-menu" aria-label="Menu principal da visita">
-        <a href="agenda.html" class="hero-menu-item">
-          <span class="hero-menu-kicker">Programa</span>
-          <strong>Agenda</strong>
-          <small>Eventos, voos e hospedagem</small>
-        </a>
-        <a href="#momento-title" class="hero-menu-item">
-          <span class="hero-menu-kicker">Tempo real</span>
-          <strong>Situação</strong>
-          <small>Agora e próximo compromisso</small>
-        </a>
-        <a href="#eventos-title" class="hero-menu-item">
-          <span class="hero-menu-kicker">Roteiro</span>
-          <strong>Eventos</strong>
-          <small>João Pessoa, Fortaleza e Recife</small>
-        </a>
-        <a href="biografia.html" class="hero-menu-item">
-          <span class="hero-menu-kicker">Perfil</span>
-          <strong>Biografia</strong>
-          <small>Carreira e condecorações</small>
-        </a>
-      </nav>
-      <div class="hero-live">
-        <div class="live-clock">
-          <span class="label">Hora local</span>
-          <strong data-live-clock>--:--:--</strong>
-          <small>BRT · UTC−3</small>
-        </div>
-        <div class="live-date">
-          <span class="label">Data</span>
-          <strong data-live-date>--</strong>
-          <small>Atualização automática pelo relógio do dispositivo</small>
-        </div>
+      <div class="landing-portrait">
+        <img src="assets/img/alte-esq-puntel.png" alt="Retrato oficial do Almirante de Esquadra Leonardo Puntel">
       </div>
     </div>
-    <div class="hero-photo">
-      <img src="assets/img/alte-esq-puntel.png" alt="Retrato oficial do Almirante de Esquadra Leonardo Puntel">
-      <div class="photo-caption">Agenda consolidada para apoio ao acompanhamento da visita institucional.</div>
+  </section>
+
+  <section class="landing-actions" aria-labelledby="menu-title">
+    <div class="landing-card">
+      <div class="landing-card-head">
+        <div>
+          <span class="landing-card-kicker">Menu principal</span>
+          <h2 id="menu-title">O que deseja acompanhar?</h2>
+        </div>
+        <a class="landing-agenda-all" href="agenda.html">Agenda completa</a>
+      </div>
+
+      <div class="landing-grid">
+        <a class="landing-button" href="agenda.html#joao-pessoa" data-event-link="joao-pessoa">
+          <span class="landing-date">24–26<br><small>SET</small></span>
+          <span class="landing-button-copy"><strong>João Pessoa</strong><small>VI Fórum OEA</small></span>
+          <span class="landing-button-meta"><b data-countdown-id="joao-pessoa">--</b><em data-status-id="joao-pessoa"></em></span>
+        </a>
+
+        <a class="landing-button" href="agenda.html#fortaleza" data-event-link="fortaleza">
+          <span class="landing-date">14–16<br><small>OUT</small></span>
+          <span class="landing-button-copy"><strong>Fortaleza</strong><small>Entrega da OMJM · Palestra EAMCE</small></span>
+          <span class="landing-button-meta"><b data-countdown-id="fortaleza">--</b><em data-status-id="fortaleza"></em></span>
+        </a>
+
+        <a class="landing-button" href="agenda.html#recife" data-event-link="recife">
+          <span class="landing-date">27–31<br><small>OUT</small></span>
+          <span class="landing-button-copy"><strong>Recife</strong><small>Congresso Anual da ENAJUM</small></span>
+          <span class="landing-button-meta"><b data-countdown-id="recife">--</b><em data-status-id="recife"></em></span>
+        </a>
+
+        <a class="landing-button landing-button-secondary" href="biografia.html">
+          <span class="landing-date landing-profile-icon">◎</span>
+          <span class="landing-button-copy"><strong>Biografia</strong><small>Carreira, comissões e condecorações</small></span>
+          <span class="landing-arrow" aria-hidden="true">›</span>
+        </a>
+      </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="momento-title">
-    <div class="section-head">
-      <div><h2 id="momento-title">Situação da agenda</h2><p>O sistema identifica automaticamente o evento em andamento e o próximo compromisso cadastrado.</p></div>
-    </div>
-    <div id="moment-grid" class="now-next-grid" aria-live="polite"></div>
-  </section>
-
-  <section class="section" aria-labelledby="eventos-title">
-    <div class="section-head">
-      <div><h2 id="eventos-title">Eventos da visita</h2><p>Contagem regressiva calculada diariamente para cada compromisso, com acesso rápido aos dados de voo e hospedagem.</p></div>
-      <a class="event-link" href="agenda.html">Abrir agenda completa</a>
-    </div>
-    <div id="event-grid" class="event-grid"></div>
-  </section>
-
-  <div class="notice"><strong>Atenção:</strong> este projeto foi preparado para uso em repositório GitHub, preferencialmente <strong>privado</strong>, por conter agenda de autoridade. Não habilite publicação pública sem autorização.</div>
-
-  <footer class="site-footer">
-    <strong>Comando do 3º Distrito Naval</strong><br>
-    Aplicação estática, sem dependências externas. Dados de agenda e biografia podem ser atualizados em <code>js/data.js</code>.
+  <footer class="landing-footer">
+    <strong>Comando do 3º Distrito Naval</strong> · Programa de apoio ao acompanhamento da visita institucional
   </footer>
 </main>
+
 <script src="js/data.js"></script>
 <script src="js/app.js"></script>
 </body>
