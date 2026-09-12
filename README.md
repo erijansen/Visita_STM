@@ -109,3 +109,14 @@ git push -u origin main
 ## Observação sobre dados ainda pendentes
 
 O documento-base informa que a programação detalhada de João Pessoa está “em anexo”, que a programação de Fortaleza está a cargo do Com3ºDN e 10ª CJM, e que a programação de Recife está aguardando. Assim, o repositório já está funcional com os dados disponíveis, mas foi estruturado para receber posteriormente horários e compromissos detalhados em `js/data.js`.
+
+
+## Versão atual
+
+**v7**
+
+- Tela inicial simplificada para funcionar como menu principal.
+- Acesso direto a João Pessoa, Fortaleza e Recife.
+- Cada evento mostra automaticamente quantos dias faltam e seu status.
+- Agenda e Biografia sem textos explicativos desnecessários.
+- Convenção dos pacotes: `visita-puntel-github-vN.zip`.

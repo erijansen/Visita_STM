@@ -221,6 +221,29 @@
     decorations.innerHTML = bio.decorations.map(x => `<li>${escapeHTML(x)}</li>`).join("");
   }
 
+
+  function updateLandingMenu() {
+    if (!document.body.classList.contains("landing-page")) return;
+    const { currentEvent, nextEvent } = currentAndNext();
+    const nextId = nextEvent ? nextEvent.id : null;
+    DATA.events.forEach(ev => {
+      qsa(`[data-countdown-id="${ev.id}"]`).forEach(el => {
+        el.textContent = countdownText(ev);
+      });
+      qsa(`[data-status-id="${ev.id}"]`).forEach(el => {
+        const state = eventState(ev);
+        let label = "";
+        let attr = "future";
+        if (state === "current") { label = "AGORA"; attr = "current"; }
+        else if (state === "done") { label = "CONCLUÍDO"; attr = "done"; }
+        else if (ev.id === nextId) { label = "PRÓXIMO"; attr = "next"; }
+        else { label = "PROGRAMADO"; attr = "future"; }
+        el.textContent = label;
+        el.dataset.state = attr;
+      });
+    });
+  }
+
   function setActiveNav() {
     const page = document.body.dataset.page;
     qsa("[data-nav]").forEach(a => {
@@ -241,6 +264,8 @@
     renderHome();
     renderAgenda();
     renderBiography();
+    updateLandingMenu();
+    setInterval(updateLandingMenu, 60000);
     registerServiceWorker();
   }
 

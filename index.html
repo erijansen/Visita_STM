@@ -30,70 +30,58 @@
   </div>
 </header>
 
-<main id="conteudo" class="landing-shell">
-  <section class="landing-hero" aria-labelledby="landing-title">
+<main id="conteudo" class="landing-shell landing-menu-only">
+  <section class="landing-hero landing-hero-compact" aria-labelledby="landing-title">
     <div class="landing-logos" aria-label="Identidades institucionais">
       <div class="landing-logo-cell"><img src="assets/img/brasao-stm.png" alt="Brasão do Superior Tribunal Militar"></div>
       <div class="landing-logo-cell"><img src="assets/img/marca-marinha-branca.png" alt="Marca da Marinha do Brasil em branco"></div>
       <div class="landing-logo-cell"><img class="landing-logo-com3dn" src="assets/img/brasao-com3dn.png" alt="Brasão do Comando do 3º Distrito Naval"></div>
     </div>
-
     <div class="landing-kicker">Visita Institucional · 2026</div>
     <h1 id="landing-title">Programa de Eventos</h1>
-
-    <div class="landing-authority-row">
-      <div class="landing-authority-copy">
-        <strong>Alte Esq Leonardo Puntel</strong>
-        <span>Ministro do Superior Tribunal Militar</span>
-        <small>Área do Comando do 3º Distrito Naval · 24SET a 31OUT2026</small>
-      </div>
-      <div class="landing-portrait">
-        <img src="assets/img/alte-esq-puntel.png" alt="Retrato oficial do Almirante de Esquadra Leonardo Puntel">
-      </div>
-    </div>
+    <p class="landing-authority-line">Alte Esq Leonardo Puntel <span>· Ministro do Superior Tribunal Militar</span></p>
   </section>
 
   <section class="landing-actions" aria-labelledby="menu-title">
-    <div class="landing-card">
-      <div class="landing-card-head">
+    <div class="landing-card landing-card-menu">
+      <div class="landing-card-head landing-card-head-simple">
         <div>
           <span class="landing-card-kicker">Menu principal</span>
-          <h2 id="menu-title">O que deseja acompanhar?</h2>
+          <h2 id="menu-title">Selecione o evento</h2>
         </div>
-        <a class="landing-agenda-all" href="agenda.html">Agenda completa</a>
       </div>
 
-      <div class="landing-grid">
-        <a class="landing-button" href="agenda.html#joao-pessoa" data-event-link="joao-pessoa">
+      <div class="landing-grid landing-grid-events">
+        <a class="landing-button landing-event-button" href="agenda.html#joao-pessoa" data-event-link="joao-pessoa">
           <span class="landing-date">24–26<br><small>SET</small></span>
           <span class="landing-button-copy"><strong>João Pessoa</strong><small>VI Fórum OEA</small></span>
           <span class="landing-button-meta"><b data-countdown-id="joao-pessoa">--</b><em data-status-id="joao-pessoa"></em></span>
+          <span class="landing-chevron" aria-hidden="true">›</span>
         </a>
 
-        <a class="landing-button" href="agenda.html#fortaleza" data-event-link="fortaleza">
+        <a class="landing-button landing-event-button" href="agenda.html#fortaleza" data-event-link="fortaleza">
           <span class="landing-date">14–16<br><small>OUT</small></span>
           <span class="landing-button-copy"><strong>Fortaleza</strong><small>Entrega da OMJM · Palestra EAMCE</small></span>
           <span class="landing-button-meta"><b data-countdown-id="fortaleza">--</b><em data-status-id="fortaleza"></em></span>
+          <span class="landing-chevron" aria-hidden="true">›</span>
         </a>
 
-        <a class="landing-button" href="agenda.html#recife" data-event-link="recife">
+        <a class="landing-button landing-event-button" href="agenda.html#recife" data-event-link="recife">
           <span class="landing-date">27–31<br><small>OUT</small></span>
           <span class="landing-button-copy"><strong>Recife</strong><small>Congresso Anual da ENAJUM</small></span>
           <span class="landing-button-meta"><b data-countdown-id="recife">--</b><em data-status-id="recife"></em></span>
+          <span class="landing-chevron" aria-hidden="true">›</span>
         </a>
+      </div>
 
-        <a class="landing-button landing-button-secondary" href="biografia.html">
-          <span class="landing-date landing-profile-icon">◎</span>
-          <span class="landing-button-copy"><strong>Biografia</strong><small>Carreira, comissões e condecorações</small></span>
-          <span class="landing-arrow" aria-hidden="true">›</span>
-        </a>
+      <div class="landing-quick-links">
+        <a href="agenda.html"><span>Agenda completa</span><b>›</b></a>
+        <a href="biografia.html"><span>Biografia</span><b>›</b></a>
       </div>
     </div>
   </section>
 
-  <footer class="landing-footer">
-    <strong>Comando do 3º Distrito Naval</strong> · Programa de apoio ao acompanhamento da visita institucional
-  </footer>
+  <footer class="landing-footer"><strong>Com3ºDN · 2026</strong></footer>
 </main>
 
 <script src="js/data.js"></script>

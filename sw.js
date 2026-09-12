@@ -1,4 +1,4 @@
-const CACHE = "visita-puntel-v6-belarmino-home";
+const CACHE = "visita-puntel-v7";
 const ASSETS = [
   "./",
   "./index.html",
