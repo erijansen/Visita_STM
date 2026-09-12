@@ -4,12 +4,13 @@ Repositório estático para acompanhamento da agenda institucional do **Almirant
 
 ## O que o projeto entrega
 
-- página inicial com retrato e identidades institucionais;
+- página inicial com retrato e identidades institucionais em fundo transparente e dimensões padronizadas;
 - relógio em tempo real no fuso `America/Fortaleza` (BRT/UTC−3);
 - identificação automática do **evento em andamento** e do **próximo evento**;
 - **contagem regressiva em dias** para cada evento;
 - agenda consolidada de João Pessoa, Fortaleza e Recife;
 - deslocamentos aéreos registrados no documento-base;
+- destaque explícito para hospedagem prevista em cada etapa;
 - página de biografia com carreira, comissões, cursos e condecorações;
 - layout responsivo para iPhone, Android, tablet e desktop;
 - PWA/offline quando servido por HTTPS ou `localhost`;
@@ -34,12 +35,13 @@ Repositório estático para acompanhamento da agenda institucional do **Almirant
         ├── alte-esq-puntel.png
         ├── brasao-stm.png
         ├── brasao-com3dn.png
+        ├── marca-marinha-branca.png
         └── marca-marinha.png
 ```
 
 ## Atualizar a programação
 
-Edite apenas `js/data.js`. Cada evento contém:
+Edite apenas `js/data.js`. Cada evento contém os dados de programação, voos e hospedagem:
 
 ```js
 {
@@ -50,6 +52,7 @@ Edite apenas `js/data.js`. Cada evento contém:
   end: "2026-10-16T23:59:59-03:00",
   dateLabel: "14 a 16OUT2026",
   venue: "...",
+  lodging: "...",
   flights: [ ... ]
 }
 ```

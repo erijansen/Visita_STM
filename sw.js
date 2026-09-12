@@ -1,4 +1,4 @@
-const CACHE = "visita-puntel-v1";
+const CACHE = "visita-puntel-v2";
 const ASSETS = [
   "./",
   "./index.html",
@@ -11,7 +11,8 @@ const ASSETS = [
   "./assets/img/alte-esq-puntel.png",
   "./assets/img/brasao-stm.png",
   "./assets/img/brasao-com3dn.png",
-  "./assets/img/marca-marinha.png"
+  "./assets/img/marca-marinha.png",
+  "./assets/img/marca-marinha-branca.png"
 ];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));

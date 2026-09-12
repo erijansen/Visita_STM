@@ -8,6 +8,6 @@
   "theme_color": "#050F41",
   "lang": "pt-BR",
   "icons": [
-    {"src": "assets/img/marca-marinha.png", "sizes": "1018x1013", "type": "image/png", "purpose": "any"}
+    {"src": "assets/img/brasao-stm.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}
   ]
 }

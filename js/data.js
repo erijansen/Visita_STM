@@ -22,7 +22,7 @@ window.PROGRAMA_PUNTEL = {
       end: "2026-09-26T23:59:59-03:00",
       dateLabel: "24 a 26SET2026",
       venue: "Auditório da Procuradoria-Geral de Justiça",
-      programStatus: "Programação detalhada indicada como anexa no documento-base.",
+      programStatus: "Programação detalhada indicada como anexa no documento-base. Hospedagem registrada: HT-JP.",
       participants: ["AE Puntel e esposa", "Min Péricles e esposa"],
       lodging: "HT-JP",
       flights: [
@@ -41,7 +41,7 @@ window.PROGRAMA_PUNTEL = {
       end: "2026-10-16T23:59:59-03:00",
       dateLabel: "14 a 16OUT2026",
       venue: "10ª Circunscrição Judiciária Militar (10ª CJM) e EAMCE",
-      programStatus: "Programação a cargo do Com3ºDN e da 10ª CJM. Auditório da EAMCE a definir.",
+      programStatus: "Programação a cargo do Com3ºDN e da 10ª CJM. Auditório da EAMCE a definir. Hospedagem registrada: HT-EAMCE.",
       participants: ["AE Puntel"],
       lodging: "HT-EAMCE",
       flights: [
@@ -59,7 +59,7 @@ window.PROGRAMA_PUNTEL = {
       end: "2026-10-31T23:59:59-03:00",
       dateLabel: "27 a 31OUT2026",
       venue: "Mar Hotel Conventions",
-      programStatus: "Programação detalhada aguardando.",
+      programStatus: "Programação detalhada aguardando. Hospedagem registrada: Mar Hotel Conventions.",
       participants: ["AE Puntel e esposa"],
       lodging: "Mar Hotel Conventions",
       flights: [

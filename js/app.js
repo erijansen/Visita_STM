@@ -96,6 +96,10 @@
       .format(date).replace(" de ", " ").replace(".", "").toUpperCase();
   }
 
+  function renderFlightLines(flights, limit = flights.length) {
+    return flights.slice(0, limit).map(f => `<li><b>${escapeHTML(formatFlightDate(f.date))}</b> · ${escapeHTML(f.passenger)} · ${escapeHTML(f.depart)}–${escapeHTML(f.arrive)} · ${escapeHTML(f.from)} → ${escapeHTML(f.to)}</li>`).join("");
+  }
+
   function updateClocks() {
     qsa("[data-live-clock]").forEach(el => el.textContent = formatClock());
     qsa("[data-live-date]").forEach(el => el.textContent = formatDateLong());
@@ -142,6 +146,10 @@
             <dt>Hospedagem</dt><dd>${escapeHTML(ev.lodging)}</dd>
             <dt>Participação</dt><dd>${escapeHTML(ev.participants.join(" · "))}</dd>
           </dl>
+          <div class="event-card-flights">
+            <strong>Voos registrados</strong>
+            <ul>${renderFlightLines(ev.flights, 2)}</ul>
+          </div>
           <div class="countdown">
             <strong>${escapeHTML(countdownText(ev))}</strong>
             <a class="event-link" href="agenda.html#${encodeURIComponent(ev.id)}">Ver agenda</a>
@@ -179,7 +187,7 @@
             <div class="info-box"><div class="k">Autoridades</div><div class="v">${escapeHTML(ev.participants.join(" · "))}</div></div>
             <div class="info-box"><div class="k">Programação</div><div class="v">${escapeHTML(ev.programStatus)}</div></div>
           </div>
-          <h3 class="subsection-title">Deslocamentos aéreos registrados</h3>
+          <h3 class="subsection-title">Dados de voo e hospedagem</h3>
           <div class="flight-list">${flights}</div>
         </div>
       </article>`;
