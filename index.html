@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#050F41">
+  <meta name="description" content="Agenda institucional da visita do Almirante de Esquadra Leonardo Puntel na área do Comando do 3º Distrito Naval.">
+  <title>Visita Institucional — Alte Esq Leonardo Puntel</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/img/marca-marinha.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-mini">
+      <img src="assets/img/brasao-com3dn.png" alt="Brasão do Comando do 3º Distrito Naval">
+      <div><strong>Com3ºDN</strong><span>Programa de Eventos</span></div>
+    </div>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html" data-nav="home">Início</a>
+      <a href="agenda.html" data-nav="agenda">Agenda</a>
+      <a href="biografia.html" data-nav="bio">Biografia</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo" class="page-shell">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <div class="logo-row" aria-label="Identidades institucionais">
+        <div class="logo-cell"><img src="assets/img/brasao-stm.png" alt="Brasão do Superior Tribunal Militar"></div>
+        <div class="logo-cell"><img src="assets/img/marca-marinha.png" alt="Marca da Marinha do Brasil"></div>
+        <div class="logo-cell"><img src="assets/img/brasao-com3dn.png" alt="Brasão do Comando do 3º Distrito Naval"></div>
+      </div>
+      <div class="eyebrow">Visita Institucional · 2026</div>
+      <h1 id="hero-title">Almirante de Esquadra Leonardo Puntel
+        <small>Ministro do Superior Tribunal Militar</small>
+      </h1>
+      <p class="hero-role">Ex-Comandante de Operações Navais da Marinha do Brasil. Agenda de compromissos na área do Comando do 3º Distrito Naval, com eventos em João Pessoa, Fortaleza e Recife.</p>
+      <div class="hero-live">
+        <div class="live-clock">
+          <span class="label">Hora local</span>
+          <strong data-live-clock>--:--:--</strong>
+          <small>BRT · UTC−3</small>
+        </div>
+        <div class="live-date">
+          <span class="label">Data</span>
+          <strong data-live-date>--</strong>
+          <small>Atualização automática pelo relógio do dispositivo</small>
+        </div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/img/alte-esq-puntel.png" alt="Retrato oficial do Almirante de Esquadra Leonardo Puntel">
+      <div class="photo-caption">Agenda consolidada para apoio ao acompanhamento da visita institucional.</div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="momento-title">
+    <div class="section-head">
+      <div><h2 id="momento-title">Situação da agenda</h2><p>O sistema identifica automaticamente o evento em andamento e o próximo compromisso cadastrado.</p></div>
+    </div>
+    <div id="moment-grid" class="now-next-grid" aria-live="polite"></div>
+  </section>
+
+  <section class="section" aria-labelledby="eventos-title">
+    <div class="section-head">
+      <div><h2 id="eventos-title">Eventos da visita</h2><p>Contagem regressiva calculada diariamente para cada compromisso.</p></div>
+      <a class="event-link" href="agenda.html">Abrir agenda completa</a>
+    </div>
+    <div id="event-grid" class="event-grid"></div>
+  </section>
+
+  <div class="notice"><strong>Atenção:</strong> este projeto foi preparado para uso em repositório GitHub, preferencialmente <strong>privado</strong>, por conter agenda de autoridade. Não habilite publicação pública sem autorização.</div>
+
+  <footer class="site-footer">
+    <strong>Comando do 3º Distrito Naval</strong><br>
+    Aplicação estática, sem dependências externas. Dados de agenda e biografia podem ser atualizados em <code>js/data.js</code>.
+  </footer>
+</main>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

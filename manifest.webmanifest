@@ -1,0 +1,13 @@
+{
+  "name": "Visita Institucional — Alte Esq Leonardo Puntel",
+  "short_name": "Visita Puntel",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F4F6FA",
+  "theme_color": "#050F41",
+  "lang": "pt-BR",
+  "icons": [
+    {"src": "assets/img/marca-marinha.png", "sizes": "1018x1013", "type": "image/png", "purpose": "any"}
+  ]
+}
